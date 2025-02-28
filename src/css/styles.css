@@ -1,0 +1,50 @@
+@media (min-width: 576px) {
+  .container,
+  .container-sm {
+    max-width: 540px;
+  }
+}
+
+.slide-right-on-boot {
+  animation: slide-right-on-boot 0.5s ease-in-out;
+}
+
+@keyframes slide-right-on-boot {
+  0% {
+    opacity: 0;
+    transform: translateX(-5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  width: 100%;
+}
+
+.projects img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.projects li {
+  height: 75vw;
+}
+
+.projects li .project-hover {
+  display: none;
+}
+
+.projects li:hover .project-normal {
+  display: none;
+}
+
+.projects li:hover .project-hover {
+  display: block;
+}
