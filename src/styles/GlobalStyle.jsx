@@ -3,6 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
     body {
         --bs-font-sans-serif: "Montserrat", sans-serif;
+       background: url(/imgs/bg.png) repeat center/40%; 
     }
 
     .slide {
@@ -13,14 +14,18 @@ const GlobalStyle = createGlobalStyle`
     @keyframes slide {
         0% {
             opacity: 0;
-            transform: translateX(var(--slide-initial-pos)) scaleX(0.98);
+            transform: translateY(var(--slide-initial-pos)) scaleX(0.98);
         }
         100% {
             opacity: 1;
-            transform: translateX(0) scaleX(1);
+            transform: translateY(0) scaleX(1);
         }
     }
-    
+
+    .alert {
+        background-image: url(/imgs/bg.png);
+        background-blend-mode: overlay;
+    }
 `;
 
 export default GlobalStyle;

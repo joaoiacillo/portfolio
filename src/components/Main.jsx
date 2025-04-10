@@ -1,14 +1,11 @@
 import styled from "styled-components";
 
 const MainWrapper = styled.main`
-    overflow-y: scroll;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+    flex: 1;
 
     h2 {
         margin-bottom: 16px;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     ul {
@@ -17,6 +14,7 @@ const MainWrapper = styled.main`
         flex-direction: column;
         justify-content: stretch;
         flex-wrap: wrap;
+        width: 100vw;
         max-width: 350px;
     }
 
@@ -33,7 +31,7 @@ const MainWrapper = styled.main`
 
     ul li a:hover {
         background-color: var(--bs-blue);
-        transform: scale(105%) translateX(2%);
+        transform: scale(105%);
     }
 
     ul li i {

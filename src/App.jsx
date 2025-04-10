@@ -6,9 +6,9 @@ import Footer from './components/Footer';
 import styled from "styled-components";
 
 const AppWrapper = styled.div`
-  display: grid;
-  grid-template-columns: 250px 1fr;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 `;
 
 function App() {
@@ -17,23 +17,9 @@ function App() {
       <Header />
 
       <Main>
-        <div className="row gap-3">
-          <section className="col p-3 border rounded shadow slide">
-            <h2><i className="bi bi-kanban me-1"></i> PROJETOS</h2>
-            <ul className="list-unstyled">
-              <li>
-                <a href="#"><i className="bi bi-link-45deg"></i> Lorem Ipsum</a>
-              </li>
-              <li>
-                <a href="#"><i className="bi bi-link-45deg"></i> Dolor Sit</a>
-              </li>
-              <li>
-                <a href="#"><i className="bi bi-link-45deg"></i> Amet.</a>
-              </li>
-            </ul>
-          </section>
-          <section className="col p-3 border rounded shadow slide">
-            <h2><i className="bi bi-tools me-1"></i> FERRAMENTAS</h2>
+        <div className="text-center gap-3 d-flex align-items-center flex-column">
+        <section className="p-3 slide">
+            <h2><i className="bi bi-tools me-1"></i> Ferramentas</h2>
             <ul className="list-unstyled">
               <li>
                 <a href="https://tools.iacillo.dev.br/linux/desktop-entry/">
@@ -42,16 +28,26 @@ function App() {
               </li>
             </ul>
           </section>
+
+          <section className="p-3 slide">
+            <h2><i className="bi bi-kanban me-1"></i> Projetos</h2>
+            <ul className="list-unstyled">
+              <div className='alert alert-primary'>Nada aqui <strong>ainda</strong>.</div>
+            </ul>
+          </section>
         </div>
 
-        <div className="flex-grow-1"></div>
 
         { /* Adicionar seção de graduação com um slider do 1° semestre até o último em JS */ }
 
-        <section className="mt-3 text-center small user-select-none">
-          <a target="_blank" className="link-secondary" href="https://www.flaticon.com/br/icones-gratis/corgi" title="corgi ícones">Corgi ícones criados por ultimatearm - Flaticon</a>
-        </section>
+        
       </Main>
+
+      <footer className="mt-3 text-center small user-select-none p-3">
+        <p className="m-0 slide slide-right text-muted user-select-none">
+          © {new Date().getFullYear()} João Iacillo - Todos os Direitos Reservados
+        </p>
+      </footer>
     </AppWrapper>
   )
 }
