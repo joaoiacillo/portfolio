@@ -2,7 +2,9 @@ import './App.css'
 
 import Header from './components/Header';
 import Main from './components/Main';
+import Card from './components/Card';
 import Footer from './components/Footer';
+
 import styled from "styled-components";
 
 const AppWrapper = styled.div`
@@ -17,16 +19,25 @@ function App() {
       <Header />
 
       <Main>
+
         <div className="text-center gap-3 d-flex align-items-center flex-column">
-        <section className="p-3 slide">
+          <section className="p-3 slide">
             <h2><i className="bi bi-tools me-1"></i> Ferramentas</h2>
-            <ul className="list-unstyled">
-              <li>
-                <a href="https://tools.iacillo.dev.br/linux/desktop-entry/">
-                  <i className="bi bi-link-45deg"></i> Linux Desktop Entry Generator
-                </a>
-              </li>
-            </ul>
+
+            <div className="d-flex gap-3 overflow-x-scroll pb-3" style={{ maxWidth: "350px", width: "100vw" }}>
+              <Card
+                name={
+                <>
+                  Linux <br />
+                  Desktop <br />
+                  Entry <br />
+                  Generator
+                </>
+                }
+                htmlTitle="Linux Desktop Entry Generator"
+                to="https://tools.iacillo.dev.br/linux/desktop-entry/"
+              />
+            </div>
           </section>
 
           <section className="p-3 slide">
@@ -38,16 +49,12 @@ function App() {
         </div>
 
 
-        { /* Adicionar seção de graduação com um slider do 1° semestre até o último em JS */ }
+        { /* Adicionar seção de graduação com um slider do 1° semestre até o último em JS */}
 
-        
+
       </Main>
 
-      <footer className="mt-3 text-center small user-select-none p-3">
-        <p className="m-0 slide slide-right text-muted user-select-none">
-          © {new Date().getFullYear()} João Iacillo - Todos os Direitos Reservados
-        </p>
-      </footer>
+      <Footer />
     </AppWrapper>
   )
 }
