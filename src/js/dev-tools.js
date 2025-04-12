@@ -1,0 +1,1 @@
+window.isDev = (u = new URL(location.href)).hostname === "localhost" && !u.searchParams.has("forceprod");

@@ -1,25 +1,207 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>João Iacillo - Bem vindo ao meu espaço</title>
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="/src/css/new-styles.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>João Iacillo</title>
-  <link rel="icon" type="image/png" href="/favicon.png" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
-  <link rel="preload" href="/imgs/bg.png" as="image" type="image/png" />
-</head>
+    <link rel="preload" href="/src/imgs/logo.png" as="image" type="image/png" />
+    <link rel="preload" href="/src/imgs/bg.png" as="image" type="image/png" />
+  </head>
 
-<body data-bs-theme="dark">
-  <div id="root"></div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script type="module" src="/src/main.jsx"></script>
-</body>
+  <body data-bs-theme="dark" data-page="home">
+    <div
+      class="container d-flex flex-column min-vh-100 py-md-3 text-center text-md-start">
+      <div class="row flex-grow-1">
+        <!-- #region Sidebar -->
+        <div class="col-md-3 bg-black rounded border shadow slide">
+          <aside>
+            <header class="pt-5 pb-1 px-3 text-center">
+              <div class="mb-1">
+                <img
+                  src="/src/imgs/logo.png"
+                  alt="corgi"
+                  class
+                  style="max-width: 64px" />
+                <h1
+                  class="main-title d-inline-block"
+                  style="
+                    font-family: 'Pixelify Sans', sans-serif;
+                    font-weight: bold;
+                    font-size: 1.6rem;
+                  ">
+                  João Iacillo
+                </h1>
+              </div>
 
+              <ul
+                class="list-unstyled mb-4 px-1 d-flex flex-wrap gap-2 small justify-content-center">
+                <li>
+                  <a href="https://github.com/joaoiacillo"
+                    class="link-light">GitHub</a>
+                </li>
+                <li>
+                  <a href="https://dev.to/iachilo"
+                    class="link-light">Blog/Dev.to</a>
+                </li>
+                <li>
+                  <a href="https://iachilo.itch.io/"
+                    class="link-light">Itch.io</a>
+                </li>
+                <li>
+                  <a href="mailto:joao@iacillo.dev.br"
+                    class="link-light">E-mail</a>
+                </li>
+                <li>
+                  <a href="https://github.com/joaoiacillo"
+                    class="link-light">LinkedIn</a>
+                </li>
+              </ul>
+
+              <div class="alert alert-warning small p-1">
+                <i class="bi bi-exclamation-triangle me-2"></i>
+                Ainda em construção.
+              </div>
+            </header>
+
+            <section class="p-3">
+              <p class="mb-0 fw-bold text-muted">
+                <i class="bi bi-box-seam me-1"></i> Utilitários
+              </p>
+
+              <ul class="small" style="list-style-type: none; padding: 0">
+                <li>
+                  <a
+                    href="https://tools.iacillo.dev.br/linux/desktop-entry/"
+                    class="link-light">Linux
+                    Desktop Entry Generator</a>
+                </li>
+              </ul>
+            </section>
+          </aside>
+        </div>
+        <!-- #endregion -->
+
+        <!-- #region Page Content -->
+        <div class="col d-flex flex-column justify-content-between">
+          <main>
+            <div class="gap-3">
+              <!-- #region Projects & Games -->
+              <div class="row gap-3 p-3 mb-4">
+                <section class="col-md slide">
+                  <h2 class="border border-dark-subtle rounded"><i
+                      class="bi bi-gear me-1"></i>
+                    Meus
+                    Projetos</h2>
+                  <ul class="list-unstyled">
+                    <div class="alert alert-primary">
+                      Nada aqui <strong>ainda</strong>.
+                    </div>
+                  </ul>
+                </section>
+
+                <section class="col-md slide">
+                  <h2><i
+                      class="bi bi-controller me-2"></i> Meus Jogos</h2>
+                  <ul
+                    class="list-unstyled d-flex gap-3 flex-wrap align-items-center justify-content-center justify-content-md-start">
+                    <li>
+                      <a target="_blank"
+                        href="https://iachilo.itch.io/almm"
+                        class="d-block grow-on-hover">
+                        <img
+                          src="/src/imgs/games/almm.jpg"
+                          class="game-img img-thumbnail rounded-circle border border-primary-on-hover"
+                          alt /></a>
+                    </li>
+                  </ul>
+                  <div class="text-center">
+                    <a
+                      href="https://iachilo.itch.io"
+                      class="d-inline-block border bg-dark rounded py-2 px-3 link-light text-decoration-none grow-on-hover fw-bold small">
+                      <img
+                        src="/src/imgs/logos/itch-io.png"
+                        width="16"
+                        alt="logo da itch.io"
+                        style="filter: invert(1)" />
+                      + no Itch.io</a>
+                  </div>
+                </section>
+              </div>
+              <!-- #endregion -->
+
+              <!-- #region Recent Posts -->
+              <section class="p-3 slide">
+                <h2><i class="bi bi-pen me-1"></i> Posts Recentes</h2>
+                <div class="spinner-border text-secondary-emphasis"
+                  role="status" id="posts-spinner">
+                  <span class="visually-hidden">Carregando posts...</span>
+                </div>
+
+                <ul class="list-unstyled"
+                  id="posts-list">
+                </ul>
+
+                <div class="text-center">
+                  <a
+                    href="https://dev.to/iachilo"
+                    class="d-inline-block border bg-dark rounded py-2 px-3 link-light text-decoration-none grow-on-hover fw-bold small">
+                    <img
+                      src="/src/imgs/logos/dev.png"
+                      width="16"
+                      alt="logo da itch.io"
+                      style="filter: invert(1)"
+                      class="me-1" />
+                    + no Dev.to</a>
+                </div>
+              </section>
+              <!-- #endregion -->
+
+              <!-- #region Books I'm Reading -->
+              <section class="p-3 slide">
+                <h2><i class="bi bi-book me-1"></i> Lendo Atualmente</h2>
+                <ul
+                  class="list-unstyled d-flex gap-2 flex-wrap justify-content-center justify-content-md-start">
+                  <li>
+                    <a target="_blank" href="https://a.co/d/ckfE2fz"
+                      class="d-block grow-on-hover"><img
+                        src="/src/imgs/books/51TgheB19FL._SL1050_.jpg"
+                        alt="Capa do livro A coragem de NÃO agradar"
+                        class="img-thumbnail border rounded border-primary-on-hover" /></a>
+                  </li>
+                </ul>
+              </section>
+              <!-- #endregion -->
+            </div>
+          </main>
+
+          <footer class="small user-select-none p-3">
+            <p
+              class="m-0 text-center slide slide-right text-muted user-select-none">
+              © 2025 João Iacillo
+            </p>
+          </footer>
+        </div>
+        <!-- #endregion -->
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/src/js/dev-tools.js"></script>
+    <script src="/src/js/posts-fetcher.js"></script>
+  </body>
 </html>

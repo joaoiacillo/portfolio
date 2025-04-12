@@ -1,0 +1,97 @@
+/* || Common  */
+
+body {
+    --bs-font-sans-serif: "Montserrat", sans-serif;
+   background: url(/src/imgs/bg.png) repeat top/40%; 
+}
+
+/* || Bootstrap Overrides */
+
+.alert {
+    background-image: url(/src/imgs/bg.png);
+    background-blend-mode: overlay;
+}
+
+.spinner-border {
+    --bs-spinner-border-width: 0.25em;
+    border-left-color: transparent;
+    animation-timing-function: cubic-bezier(.16,.51,.74,1.68);
+}
+
+/* || Bootstrap Customs */
+
+.grow-on-hover {
+    transition: transform 0.1s cubic-bezier(.16,.51,.74,1.68);
+}
+.grow-on-hover:hover {
+    transform: scale(1.05);
+}
+
+.border-primary-on-hover {
+    transition: border-color 0.1s ease-in-out;
+}
+.border-primary-on-hover:hover {
+    border-color: var(--bs-primary) !important;
+}
+
+/* || Animations  */
+
+.slide {
+    --slide-initial-pos: -5px;
+    animation: slide 0.2s cubic-bezier(.16,.51,.74,1.68);
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(var(--slide-initial-pos)) scaleX(0.98);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scaleX(1);
+    }
+}
+
+/* || Index Page */
+
+[data-page="home"] main h2 {
+    margin-bottom: 16px;
+    font-size: 1.2rem;
+    padding: 8px 12px;
+    border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+    border-radius: var(--bs-border-radius) !important;
+    background-color: var(--bs-dark);
+    background-image: url(/src/imgs/bg.png);
+    background-blend-mode: overlay;
+}
+
+/* || Game */
+
+.game-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+/* || Post */
+
+.post {
+    border-color: transparent !important;
+    border-left-color: white !important;
+    transition: border .2s ease-in-out, background .2s ease-in-out, padding .2s ease-in-out;
+}
+.post:hover {
+    background-color: var(--bs-dark);
+    background-image: url(/src/imgs/bg.png);
+    background-blend-mode: overlay;
+    border-color: var(--bs-primary) !important;
+    padding: 0.5rem 1rem;
+}
+
+.post h5 {
+    text-shadow: 0 4px 4px rgba(0 0 0 / 15%);
+}
+
+.post .badge::before {
+    content: "#";
+}
