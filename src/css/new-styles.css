@@ -2,13 +2,13 @@
 
 body {
     --bs-font-sans-serif: "Montserrat", sans-serif;
-   background: url(/src/imgs/bg.png) repeat top/40%; 
+   background: url(/src/imgs/bg.jpg) repeat top/40%; 
 }
 
 /* || Bootstrap Overrides */
 
 .alert {
-    background-image: url(/src/imgs/bg.png);
+    background-image: url(/src/imgs/bg.jpg);
     background-blend-mode: overlay;
 }
 
@@ -61,7 +61,7 @@ body {
     border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
     border-radius: var(--bs-border-radius) !important;
     background-color: var(--bs-dark);
-    background-image: url(/src/imgs/bg.png);
+    background-image: url(/src/imgs/bg.jpg);
     background-blend-mode: overlay;
 }
 
@@ -82,7 +82,7 @@ body {
 }
 .post:hover {
     background-color: var(--bs-dark);
-    background-image: url(/src/imgs/bg.png);
+    background-image: url(/src/imgs/bg.jpg);
     background-blend-mode: overlay;
     border-color: var(--bs-primary) !important;
     padding: 0.5rem 1rem;
