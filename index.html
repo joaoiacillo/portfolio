@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>João Iacillo - Bem vindo ao meu espaço</title>
+    <title>João Iacillo - Bem vindo!</title>
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link
       rel="stylesheet"
@@ -25,74 +25,95 @@
   <body data-bs-theme="dark" data-page="home">
     <div
       class="container d-flex flex-column min-vh-100 py-md-3 text-center text-md-start">
-      <div class="row flex-grow-1">
+      <div class="row flex-lg-row-reverse flex-grow-1">
         <!-- #region Sidebar -->
-        <div class="col-md-3 bg-black rounded border shadow slide">
-          <aside>
-            <header class="pt-5 pb-1 px-3 text-center">
-              <div class="mb-1">
-                <img
-                  src="/src/imgs/logo.png"
-                  alt="corgi"
-                  class
-                  style="max-width: 64px" />
-                <h1
-                  class="main-title d-inline-block"
-                  style="
+        <aside class="col-lg-3 mt-3">
+          <header
+            class="px-3 pt-4 pb-2 mb-1 bg-black border rounded-top text-center">
+            <img
+              src="/src/imgs/profile.jpg"
+              alt="corgi"
+              class="rounded-circle border d-block mx-auto mb-2"
+              width="100" />
+
+            <h1
+              class="main-title d-inline-block mb-3"
+              style="
                     font-family: 'Pixelify Sans', sans-serif;
                     font-weight: bold;
                     font-size: 1.6rem;
                   ">
-                  João Iacillo
-                </h1>
-              </div>
+              João Iacillo
+            </h1>
 
-              <ul
-                class="list-unstyled mb-4 px-1 d-flex flex-wrap gap-2 small justify-content-center">
-                <li>
-                  <a href="https://github.com/joaoiacillo"
-                    class="link-light">GitHub</a>
-                </li>
-                <li>
-                  <a href="https://dev.to/iachilo"
-                    class="link-light">Blog/Dev.to</a>
-                </li>
-                <li>
-                  <a href="https://iachilo.itch.io/"
-                    class="link-light">Itch.io</a>
-                </li>
-                <li>
-                  <a href="mailto:joao@iacillo.dev.br"
-                    class="link-light">E-mail</a>
-                </li>
-                <li>
-                  <a href="https://github.com/joaoiacillo"
-                    class="link-light">LinkedIn</a>
+            <ul
+              class="list-unstyled d-flex justify-content-center align-items-center gap-2 small">
+              <li>
+                <a href="https://github.com/joaoiacillo" class="link-light">
+                  <i class="bi bi-github"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://dev.to/iachilo"
+                  class="link-light">
+                  <img src="/src/imgs/logos/dev.png" width="20">
+                </a>
+              </li>
+              <li>
+                <a href="https://iachilo.itch.io/"
+                  class="link-light">
+                  <img src="/src/imgs/logos/itch-io.png" width="20"
+                    style="filter: invert(1);">
+                </a>
+              </li>
+              <li>
+                <a href="https://bsky.app/profile/iacillo.dev.br"
+                  class="link-light me-1">
+                  <img src="/src/imgs/logos/bsky.png" width="16"
+                    style="filter: brightness(0) invert(1);">
+                </a>
+              </li>
+              <li>
+                <a href="mailto:joao@iacillo.dev.br"
+                  class="link-light">
+                  <i class="bi bi-envelope-at-fill"></i>
+                </a>
+              </li>
+            </ul>
+          </header>
+
+          <section class="bg-black border rounded-bottom mb-3 p-3">
+            <nav class="main-nav">
+              <ul class="list-unstyled m-0">
+                <li
+                  class="d-flex align-items-center bg-secondary-subtle gap-2 rounded py-2 ps-3 fw-bold text-white">
+                  <i class="bi bi-house-fill"></i>
+                  Início
                 </li>
               </ul>
+            </nav>
+          </section>
 
-              <div class="alert alert-warning small p-1">
-                <i class="bi bi-exclamation-triangle me-2"></i>
-                Ainda em construção.
-              </div>
-            </header>
+          <div class="alert alert-warning small p-2 text-center">
+            <i class="bi bi-exclamation-triangle me-2"></i>
+            Ainda em construção.
+          </div>
 
-            <section class="p-3">
-              <p class="mb-0 fw-bold text-muted">
-                <i class="bi bi-box-seam me-1"></i> Utilitários
-              </p>
+          <section class="p-3">
+            <p class="mb-0 fw-bold text-muted">
+              <i class="bi bi-box-seam me-1"></i> Utilitários
+            </p>
 
-              <ul class="small" style="list-style-type: none; padding: 0">
-                <li>
-                  <a
-                    href="https://tools.iacillo.dev.br/linux/desktop-entry/"
-                    class="link-light">Linux
-                    Desktop Entry Generator</a>
-                </li>
-              </ul>
-            </section>
-          </aside>
-        </div>
+            <ul class="small" style="list-style-type: none; padding: 0">
+              <li>
+                <a
+                  href="https://tools.iacillo.dev.br/linux/desktop-entry/"
+                  class="link-light">Linux
+                  Desktop Entry Generator</a>
+              </li>
+            </ul>
+          </section>
+        </aside>
         <!-- #endregion -->
 
         <!-- #region Page Content -->
