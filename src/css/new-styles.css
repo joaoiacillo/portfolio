@@ -60,13 +60,22 @@ a {
 /* || Index Page */
 
 [data-page="home"] main h2 {
-    font-size: 1.2rem;
-    padding: 8px 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px;
     border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
     border-radius: var(--bs-border-radius) !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
     background-color: var(--bs-dark);
     background-image: url(/src/imgs/bg.jpg);
     background-blend-mode: overlay;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+[data-page="home"] main h2 i {
+    vertical-align: middle;
 }
 
 /* || Post */

@@ -89,91 +89,98 @@
               <i class="bi bi-exclamation-triangle ms-2"></i>
             </marquee>
           </div>
-
-          <!-- TODO: Move this elsewhere -->
-          <section class="p-3 slide">
-            <p class="mb-0 fw-bold text-muted"><i class="bi bi-box-seam me-1"></i> Utilitários</p>
-
-            <ul class="small" style="list-style-type: none; padding: 0">
-              <li>
-                <a href="https://tools.iacillo.dev.br/linux/desktop-entry/">Linux Desktop Entry Generator</a>
-              </li>
-            </ul>
-          </section>
         </aside>
 
         <!-- Page Content -->
         <div class="col d-flex flex-column justify-content-between">
           <main>
             <div class="gap-3">
-              <div class="row gap-3 p-3 mb-4">
+              <div class="row gap-3 p-3">
                 <!-- Personal Projects -->
                 <section class="col-md slide">
                   <h2><i class="bi bi-gear me-1"></i> Meus Projetos</h2>
-                  <ul class="list-unstyled ps-3 mb-2 small">
-                    <li>
-                      <a target="_blank" href="https://github.com/joaoiacillo/bsky-movie-guesser">
-                        /bsky-movie-guesser
-                      </a>
-                    </li>
-                    <li>
-                      <a target="_blank" href="https://github.com/joaoiacillo/1sti-react-challenge">
-                        /1sti-react-challenge
-                      </a>
-                    </li>
-                    <li>
-                      <a target="_blank" href="https://github.com/joaoiacillo/qrcode-creator"> /qrcode-creator </a>
-                    </li>
-                    <li>
-                      <a target="_blank" href="https://github.com/joaoiacillo/tom"> /tom </a>
-                    </li>
-                    <li>
-                      <a target="_blank" href="https://github.com/joaoiacillo/steam-dmenu"> /steam-dmenu </a>
-                    </li>
-                    <li>
-                      <a target="_blank" href="https://github.com/joaoiacillo/vault-guard"> /vault-guard </a>
-                    </li>
-                  </ul>
-                  <a href="https://github.com/joaoiacillo" class="text-decoration-none ms-3 small" target="_blank">
-                    <i class="bi bi-github me-1"></i>
-                    <span class="text-decoration-underline">Mais no GitHub</span></a
-                  >
+                  <div class="bg-black py-2 px-3 border border-top-0 rounded-bottom">
+                    <ul class="list-unstyled mb-3 small">
+                      <li>
+                        <a target="_blank" href="https://github.com/joaoiacillo/bsky-movie-guesser">
+                          /bsky-movie-guesser
+                        </a>
+                      </li>
+                      <li>
+                        <a target="_blank" href="https://github.com/joaoiacillo/1sti-react-challenge">
+                          /1sti-react-challenge
+                        </a>
+                      </li>
+                      <li>
+                        <a target="_blank" href="https://github.com/joaoiacillo/qrcode-creator"> /qrcode-creator </a>
+                      </li>
+                      <li>
+                        <a target="_blank" href="https://github.com/joaoiacillo/tom"> /tom </a>
+                      </li>
+                      <li>
+                        <a target="_blank" href="https://github.com/joaoiacillo/steam-dmenu"> /steam-dmenu </a>
+                      </li>
+                      <li>
+                        <a target="_blank" href="https://github.com/joaoiacillo/vault-guard"> /vault-guard </a>
+                      </li>
+                    </ul>
+                    <a href="https://github.com/joaoiacillo" class="btn btn-dark py-1 w-100" target="_blank">
+                      <i class="bi bi-github me-1"></i>
+                      Tem mais no GitHub
+                    </a>
+                  </div>
                 </section>
 
-                <!-- Personal Games -->
-                <section class="col-md slide">
-                  <h2><i class="bi bi-controller me-2"></i> Meus Jogos</h2>
-                  <ul class="list-unstyled ps-3 mb-2 small">
-                    <li>
-                      <a target="_blank" href="https://iachilo.itch.io/almm">/allm</a>
-                    </li>
-                  </ul>
-                  <a
-                    href="https://iachilo.itch.io"
-                    class="text-decoration-none small"
-                    target="_blank"
-                    style="margin-left: 12px"
-                  >
-                    <img src="/src/imgs/logos/itch-io.png" width="16" alt="logo da itch.io" style="filter: invert(1)" />
-                    <span class="text-decoration-underline">Mais no itch.io</span></a
-                  >
-                </section>
+                <div class="col-md slide">
+                  <!-- Personal Games -->
+                  <section class="mb-3">
+                    <h2><i class="bi bi-controller me-2"></i> Meus Jogos</h2>
+                    <div class="bg-black py-2 px-3 border border-top-0 rounded-bottom">
+                      <ul class="list-unstyled mb-3 small">
+                        <li>
+                          <a target="_blank" href="https://iachilo.itch.io/almm">/allm</a>
+                        </li>
+                      </ul>
+                      <a href="https://iachilo.itch.io" class="btn btn-dark py-1 w-100" target="_blank">
+                        <img
+                          src="/src/imgs/logos/itch-io.png"
+                          width="16"
+                          alt="logo da itch.io"
+                          style="filter: invert(1)"
+                        />
+                        Tem mais no itch.io
+                      </a>
+                    </div>
+                  </section>
+
+                  <!-- Utilities -->
+                  <section>
+                    <h2><i class="bi bi-box-seam me-1"></i> Utilitários</h2>
+                    <div class="bg-black py-2 px-3 border border-top-0 rounded-bottom">
+                      <ul class="list-unstyled mb-2 small">
+                        <li>
+                          <a href="https://tools.iacillo.dev.br/linux/desktop-entry/" target="_blank">
+                            /linux-desktop-entry-generator
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </section>
+                </div>
               </div>
 
               <!-- Recent Posts -->
               <section class="p-3 slide">
                 <h2><i class="bi bi-pen me-1"></i> Posts Recentes</h2>
-                <div class="spinner-border text-secondary-emphasis" role="status" id="posts-spinner">
-                  <span class="visually-hidden">Carregando posts...</span>
-                </div>
 
-                <ul class="list-unstyled" id="posts-list"></ul>
+                <div class="bg-black py-2 px-3 border border-top-0 rounded-bottom">
+                  <div class="spinner-border text-secondary-emphasis" role="status" id="posts-spinner">
+                    <span class="visually-hidden">Carregando posts...</span>
+                  </div>
 
-                <div class="text-center">
-                  <a
-                    href="https://dev.to/iachilo"
-                    class="d-inline-block border bg-dark rounded py-2 px-3 text-decoration-none grow-on-hover fw-bold small"
-                  >
+                  <ul class="list-unstyled" id="posts-list"></ul>
+
+                  <a href="https://dev.to/iachilo" class="btn btn-dark p-1 text-decoration-none w-100">
                     <img
                       src="/src/imgs/logos/dev.png"
                       width="16"
@@ -181,7 +188,7 @@
                       style="filter: invert(1)"
                       class="me-1"
                     />
-                    + no Dev.to</a
+                    Tem mais no dev.to</a
                   >
                 </div>
               </section>
@@ -189,16 +196,18 @@
               <!-- Books I'm Reading -->
               <section class="p-3 slide">
                 <h2><i class="bi bi-book me-1"></i> Lendo Atualmente</h2>
-                <ul class="list-unstyled d-flex gap-2 flex-wrap justify-content-center justify-content-md-start">
-                  <li>
-                    <a target="_blank" href="https://a.co/d/ckfE2fz" class="d-block grow-on-hover"
-                      ><img
-                        src="/src/imgs/books/51TgheB19FL._SL1050_.jpg"
-                        alt="Capa do livro A coragem de NÃO agradar"
-                        class="img-thumbnail border rounded border-primary-on-hover"
-                    /></a>
-                  </li>
-                </ul>
+                <div class="bg-black py-2 px-3 border border-top-0 rounded-bottom">
+                  <ul class="list-unstyled d-flex gap-2 flex-wrap justify-content-center justify-content-md-start m-0">
+                    <li>
+                      <a target="_blank" href="https://a.co/d/ckfE2fz" class="d-block grow-on-hover"
+                        ><img
+                          src="/src/imgs/books/51TgheB19FL._SL1050_.jpg"
+                          alt="Capa do livro A coragem de NÃO agradar"
+                          class="img-thumbnail border rounded border-primary-on-hover"
+                      /></a>
+                    </li>
+                  </ul>
+                </div>
               </section>
             </div>
           </main>
