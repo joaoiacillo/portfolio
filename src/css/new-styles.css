@@ -5,6 +5,10 @@ body {
    background: url(/src/imgs/bg.jpg) repeat top/40%; 
 }
 
+a {
+    color: var(--bs-light);
+}
+
 /* || Bootstrap Overrides */
 
 .alert {
@@ -55,7 +59,6 @@ body {
 /* || Index Page */
 
 [data-page="home"] main h2 {
-    margin-bottom: 16px;
     font-size: 1.2rem;
     padding: 8px 12px;
     border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
@@ -63,14 +66,6 @@ body {
     background-color: var(--bs-dark);
     background-image: url(/src/imgs/bg.jpg);
     background-blend-mode: overlay;
-}
-
-/* || Game */
-
-.game-img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
 }
 
 /* || Post */

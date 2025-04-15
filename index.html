@@ -24,7 +24,7 @@
       <div class="row flex-lg-row-reverse flex-grow-1">
         <!-- Sidebar -->
         <aside class="col-lg-3 mt-3">
-          <header class="px-3 pt-4 pb-2 mb-1 bg-black border rounded-top text-center">
+          <header class="px-3 pt-4 pb-2 mb-1 bg-black border rounded-top text-center slide">
             <img
               src="/src/imgs/profile.jpg"
               alt="corgi"
@@ -42,27 +42,27 @@
             <!-- Social List -->
             <ul class="list-unstyled d-flex justify-content-center align-items-center gap-2 small">
               <li>
-                <a href="https://github.com/joaoiacillo" class="link-light">
+                <a href="https://github.com/joaoiacillo" class="text-decoration-none">
                   <i class="bi bi-github"></i>
                 </a>
               </li>
               <li>
-                <a href="https://dev.to/iachilo" class="link-light">
+                <a href="https://dev.to/iachilo">
                   <img src="/src/imgs/logos/dev.png" width="20" />
                 </a>
               </li>
               <li>
-                <a href="https://iachilo.itch.io/" class="link-light">
+                <a href="https://iachilo.itch.io/">
                   <img src="/src/imgs/logos/itch-io.png" width="20" style="filter: invert(1)" />
                 </a>
               </li>
               <li>
-                <a href="https://bsky.app/profile/iacillo.dev.br" class="link-light me-1">
+                <a href="https://bsky.app/profile/iacillo.dev.br" class="me-1">
                   <img src="/src/imgs/logos/bsky.png" width="16" style="filter: brightness(0) invert(1)" />
                 </a>
               </li>
               <li>
-                <a href="mailto:joao@iacillo.dev.br" class="link-light">
+                <a href="mailto:joao@iacillo.dev.br">
                   <i class="bi bi-envelope-at-fill"></i>
                 </a>
               </li>
@@ -70,7 +70,7 @@
           </header>
 
           <!-- Navigation -->
-          <section class="bg-black border rounded-bottom mb-3 p-3">
+          <section class="bg-black border rounded-bottom mb-3 p-3 slide">
             <nav class="main-nav">
               <ul class="list-unstyled m-0">
                 <li class="d-flex align-items-center bg-secondary-subtle gap-2 rounded py-2 ps-3 fw-bold text-white">
@@ -82,7 +82,7 @@
           </section>
 
           <!-- Construction Marquee -->
-          <div class="alert alert-warning small py-2 px-0 text-center user-select-none">
+          <div class="alert alert-warning small py-2 px-0 text-center user-select-none slide">
             <marquee>
               <i class="bi bi-exclamation-triangle me-2"></i>
               Ainda em construção
@@ -91,14 +91,12 @@
           </div>
 
           <!-- TODO: Move this elsewhere -->
-          <section class="p-3">
+          <section class="p-3 slide">
             <p class="mb-0 fw-bold text-muted"><i class="bi bi-box-seam me-1"></i> Utilitários</p>
 
             <ul class="small" style="list-style-type: none; padding: 0">
               <li>
-                <a href="https://tools.iacillo.dev.br/linux/desktop-entry/" class="link-light"
-                  >Linux Desktop Entry Generator</a
-                >
+                <a href="https://tools.iacillo.dev.br/linux/desktop-entry/">Linux Desktop Entry Generator</a>
               </li>
             </ul>
           </section>
@@ -111,40 +109,54 @@
               <div class="row gap-3 p-3 mb-4">
                 <!-- Personal Projects -->
                 <section class="col-md slide">
-                  <h2 class="border border-dark-subtle rounded"><i class="bi bi-gear me-1"></i> Meus Projetos</h2>
-                  <ul class="list-unstyled">
-                    <div class="alert alert-primary">Nada aqui <strong>ainda</strong>.</div>
+                  <h2><i class="bi bi-gear me-1"></i> Meus Projetos</h2>
+                  <ul class="list-unstyled ps-3 mb-2 small">
+                    <li>
+                      <a target="_blank" href="https://github.com/joaoiacillo/bsky-movie-guesser">
+                        /bsky-movie-guesser
+                      </a>
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://github.com/joaoiacillo/1sti-react-challenge">
+                        /1sti-react-challenge
+                      </a>
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://github.com/joaoiacillo/qrcode-creator"> /qrcode-creator </a>
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://github.com/joaoiacillo/tom"> /tom </a>
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://github.com/joaoiacillo/steam-dmenu"> /steam-dmenu </a>
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://github.com/joaoiacillo/vault-guard"> /vault-guard </a>
+                    </li>
                   </ul>
+                  <a href="https://github.com/joaoiacillo" class="text-decoration-none ms-3 small" target="_blank">
+                    <i class="bi bi-github me-1"></i>
+                    <span class="text-decoration-underline">Mais no GitHub</span></a
+                  >
                 </section>
 
                 <!-- Personal Games -->
                 <section class="col-md slide">
                   <h2><i class="bi bi-controller me-2"></i> Meus Jogos</h2>
-                  <ul
-                    class="list-unstyled d-flex gap-3 flex-wrap align-items-center justify-content-center justify-content-md-start"
-                  >
+                  <ul class="list-unstyled ps-3 mb-2 small">
                     <li>
-                      <a target="_blank" href="https://iachilo.itch.io/almm" class="d-block grow-on-hover">
-                        <img
-                          src="/src/imgs/games/almm.jpg"
-                          class="game-img img-thumbnail rounded-circle border border-primary-on-hover"
-                      /></a>
+                      <a target="_blank" href="https://iachilo.itch.io/almm">/allm</a>
                     </li>
                   </ul>
-                  <div class="text-center">
-                    <a
-                      href="https://iachilo.itch.io"
-                      class="d-inline-block border bg-dark rounded py-2 px-3 link-light text-decoration-none grow-on-hover fw-bold small"
-                    >
-                      <img
-                        src="/src/imgs/logos/itch-io.png"
-                        width="16"
-                        alt="logo da itch.io"
-                        style="filter: invert(1)"
-                      />
-                      + no Itch.io</a
-                    >
-                  </div>
+                  <a
+                    href="https://iachilo.itch.io"
+                    class="text-decoration-none small"
+                    target="_blank"
+                    style="margin-left: 12px"
+                  >
+                    <img src="/src/imgs/logos/itch-io.png" width="16" alt="logo da itch.io" style="filter: invert(1)" />
+                    <span class="text-decoration-underline">Mais no itch.io</span></a
+                  >
                 </section>
               </div>
 
@@ -160,7 +172,7 @@
                 <div class="text-center">
                   <a
                     href="https://dev.to/iachilo"
-                    class="d-inline-block border bg-dark rounded py-2 px-3 link-light text-decoration-none grow-on-hover fw-bold small"
+                    class="d-inline-block border bg-dark rounded py-2 px-3 text-decoration-none grow-on-hover fw-bold small"
                   >
                     <img
                       src="/src/imgs/logos/dev.png"
