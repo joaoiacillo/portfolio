@@ -1,7 +1,8 @@
 /* || Common  */
 
 body {
-    --bs-font-sans-serif: "Montserrat", sans-serif;
+    --bs-font-sans-serif: "Open Sans", sans-serif;
+    font-family: var(--bs-font-sans-serif);
    background: url(/src/imgs/bg.jpg) repeat top/40% fixed;
    background-size: contain;
 }
