@@ -44,7 +44,7 @@ a {
 
 .slide {
     --slide-initial-pos: -5px;
-    animation: slide 0.2s cubic-bezier(.16,.51,.74,1.68);
+    /*animation: slide 0.2s cubic-bezier(.16,.51,.74,1.68);*/
 }
 
 @keyframes slide {

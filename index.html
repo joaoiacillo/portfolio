@@ -16,7 +16,7 @@
       rel="stylesheet"
     />
 
-    <link rel="preload" href="/src/imgs/logo.png" as="image" type="image/png" />
+    <link rel="preload" href="/src/imgs/profile.jpg" as="image" type="image/png" />
     <link rel="preload" href="/src/imgs/bg.jpg" as="image" type="image/png" />
 
     <link rel="stylesheet" href="/src/css/new-styles.css" />
@@ -76,9 +76,23 @@
           <section class="bg-black border rounded-bottom mb-3 p-3 slide">
             <nav class="main-nav">
               <ul class="list-unstyled m-0">
-                <li class="d-flex align-items-center bg-secondary-subtle gap-2 rounded py-2 ps-3 fw-bold text-white">
-                  <i class="bi bi-house-fill"></i>
-                  Início
+                <li>
+                  <a
+                    href="#"
+                    class="text-decoration-none d-flex align-items-center bg-secondary-subtle gap-2 rounded py-2 ps-3 fw-bold text-white"
+                  >
+                    <i class="bi bi-house-fill"></i>
+                    Início
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/about.html"
+                    class="text-decoration-none d-flex align-items-center gap-2 rounded py-2 ps-3 text-muted"
+                  >
+                    <i class="bi bi-patch-question"></i>
+                    Sobre mim
+                  </a>
                 </li>
               </ul>
             </nav>
@@ -94,7 +108,7 @@
           </section>
 
           <!-- Buttons -->
-          <section class="text-center" style="text-wrap: balanced; line-height: 2.3rem">
+          <section class="text-center slide" style="text-wrap: balanced; line-height: 2.3rem">
             <img src="/src/imgs/buttons/mobile-friendly.gif" alt="mobile friendly" title="Adaptável para celulares" />
             <img src="/src/imgs/buttons/firefox.gif" alt="tested on firefox" title="Testado no Firefox" />
             <img src="/src/imgs/buttons/ubuntu.gif" alt="ubuntu" title="Ubuntu" />
@@ -109,7 +123,7 @@
         <div class="col d-flex flex-column justify-content-between">
           <main>
             <div class="row gap-3 p-3">
-              <div class="bg-black py-3 px-3 border rounded text-center">
+              <div class="bg-black py-3 px-3 border rounded text-center slide">
                 <h3 class="fw-bold">Bem vindo, aventureiro(a)!</h3>
                 <div class="small mx-auto" style="max-width: 700px; text-wrap: balance">
                   <hr />
@@ -124,7 +138,7 @@
                     softwares nativos em C, e jogos em Godot e GameMaker.
                   </p>
                   <hr />
-                  <a href="#">Saiba mais sobre mim</a>
+                  <a href="/about.html">Saiba mais sobre mim</a>
                   ou então continue scrollando e explorando!
                   <i class="bi bi-arrow-down-short"></i>
                 </div>
