@@ -2,7 +2,8 @@
 
 body {
     --bs-font-sans-serif: "Montserrat", sans-serif;
-   background: url(/src/imgs/bg.jpg) repeat top/40%; 
+   background: url(/src/imgs/bg.jpg) repeat top/40% fixed;
+   background-size: contain;
 }
 
 a {
