@@ -84,7 +84,7 @@
                 </li>
                 <li>
                   <a
-                    href="/about.html"
+                    href="/about.php"
                     class="text-decoration-none d-flex align-items-center gap-2 rounded py-2 ps-3 text-muted"
                   >
                     <i class="bi bi-patch-question"></i>
