@@ -135,7 +135,7 @@
                     softwares nativos em C, e jogos em Godot e GameMaker.
                   </p>
                   <hr />
-                  <a href="/about.html">Saiba mais sobre mim</a>
+                  <a href="/about.php">Saiba mais sobre mim</a>
                   ou então continue scrollando e explorando!
                   <i class="bi bi-arrow-down-short"></i>
                 </div>
