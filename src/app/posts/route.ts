@@ -1,6 +1,7 @@
 export const GET = async () => {
   const response = await fetch("https://dev.to/api/articles?username=iachilo", {
     cache: "force-cache",
+    next: { revalidate: 900 },
   });
 
   const posts: {
